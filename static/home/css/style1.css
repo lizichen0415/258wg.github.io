@@ -1,0 +1,193 @@
+@charset "UTF-8";
+html {
+	color: #000;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+a, button {
+	outline: 0;
+	text-decoration: none;
+}
+* {
+	margin: 0;
+	padding: 0
+}
+#wenkmPlayer .music-player {
+  position: relative;
+  width: 350px;
+  height: 290px;
+  
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  background-image: url("../image/back.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/back.png*/;
+  overflow: hidden;
+  z-index: 0;
+}
+#wenkmPlayer .music-player .info {
+  width: 100%;
+  height: 100px;
+  background: #222;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  position: relative;
+}
+#wenkmPlayer .music-player .info .jp-playlist li {
+  display: none;
+}
+#wenkmPlayer .music-player .info .jp-playlist li a {
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #fff;
+  color: rgba(225, 225, 225, 0.4);
+}
+#wenkmPlayer .music-player .info .jp-playlist li a span {
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+}
+#wenkmPlayer .music-player .info .jp-playlist li.jp-playlist-current {
+  display: block;
+}
+#wenkmPlayer .music-player .info .jp-playlist li .jp-free-media, .music-player .info .jp-playlist li .jp-playlist-item-remove {
+  display: none;
+}
+#wenkmPlayer .music-player .info .left, .music-player .info .right {
+  width: 25px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+#wenkmPlayer .music-player .info .right {
+  left: auto;
+  right: 30px;
+}
+#wenkmPlayer .music-player .info [class^="icon-"] {
+  margin: 0 0 10px;
+}
+#wenkmPlayer .music-player .info .center {
+  padding: 20px 0 0;
+}
+#wenkmPlayer .music-player .Speed {
+  width: 100%;
+  height: 5px;
+  display: block;
+  background: #000;
+  position: absolute;
+  bottom: 0px;
+  cursor: pointer;
+}
+#wenkmPlayer .music-player .Speed span, .music-player .volume-level span {
+  position: relative;
+  display: block;
+  background: #ed553b;
+  width: 0%;
+  height: 5px;
+}
+#wenkmPlayer .music-player .Speed span:after, .music-player .volume-level span:after {
+  position: absolute;
+  right: -5px;
+  top: -8px;
+  content: "";
+  width: 10px;
+  height: 22px;
+  background: url("") no-repeat center;
+}
+#wenkmPlayer .music-player .controls {
+  text-align: center;
+  width: 100%;
+  height: 190px;
+  background: #982e4b;
+  background: rgba(152, 46, 75, 0.6);
+}
+#wenkmPlayer .music-player .controls .current {
+  font-size: 48px;
+  color: #fff;
+  color: rgba(225, 225, 225, 0.4);
+  padding: 15px 0 20px;
+}
+#wenkmPlayer .music-player .controls .play-controls a {
+  display: inline-block;
+  width: 35px;
+  height: 40px;
+  margin: 0 30px;
+}
+#wenkmPlayer .music-player .controls .volume-level {
+  position: relative;
+  bottom: auto;
+  width: 200px;
+  height: 2px;
+  margin: 30px auto 0;
+  background: rgba(225, 225, 225, 0.3);
+}
+#wenkmPlayer .music-player .controls .volume-level span {
+  height: 2px;
+}
+#wenkmPlayer .music-player .controls .volume-level span:after {
+  right: -11px;
+  top: -8px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../image/V5i67V2.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/V5i67V2.png*/;
+}
+#wenkmPlayer .music-loud{
+  position: absolute;
+  right: -32px;
+  top: -13px;
+  width: 22px;
+}
+#wenkmPlayer .music-whisper {
+	position: absolute;
+	right: -32px;
+	top: -15px;
+	width: 245%;
+}
+
+[class^="ico-"] {
+  width: 30px;
+  height: 30px;
+  background: url("../image/E09T8tf.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/E09T8tf.png*/ no-repeat center;
+  display: block;
+}
+
+#wenkmPlayer .ico-shuffle {
+  background-image: url("../image/AQAxRxS.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/AQAxRxS.png*/;
+}
+#wenkmPlayer .ico-heart {
+  background-image: url("../image/E09T8tf.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/E09T8tf.png*/;
+}
+#wenkmPlayer .ico-repeat {
+  background-image: url("../image/338F8MX.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/338F8MX.png*/;
+}
+#wenkmPlayer .ico-share {
+  background-image: url("../image/PGIC6ME.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/PGIC6ME.png*/;
+}
+#wenkmPlayer .ico-previous {
+  background-image: url("../image/LIqj0nr.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/LIqj0nr.png*/;
+}
+#wenkmPlayer .ico-play {
+  background-image: url("../image/xlBv5aR.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/xlBv5aR.png*/;
+}
+#wenkmPlayer .ico-pause {
+  background-image: url("../image/lIhwduj.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/lIhwduj.png*/;
+}
+#wenkmPlayer .ico-next {
+  background-image: url("../image/RIqj0nr.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/RIqj0nr.png*/;
+}
+#wenkmPlayer .ico-volume-up {
+  background-image: url("../image/qqdoddi.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/qqdoddi.png*/;
+}
+#wenkmPlayer .ico-volume-down {
+  background-image: url("../image/3iirf2f.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/3iirf2f.png*/;
+}
+
+#wenkmPlayer .copyrights {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 50px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#wenkmPlayer .copyrights a {
+  color: rgba(152, 46, 75, 0.9);
+  text-decoration: none;
+}

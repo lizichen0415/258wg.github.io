@@ -1,0 +1,352 @@
+@charset "UTF-8";
+
+html {
+	color: #000;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+a,
+button {
+	outline: 0;
+	text-decoration: none;
+}
+
+* {
+	margin: 0;
+	padding: 0
+}
+
+#wenkmPlayer .music-player {
+	position: relative;
+	width: 350px;
+	height: 290px;
+
+	box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+	border-radius: 10px;
+	background-image: url("../image/back1.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/back1.png*/;
+	overflow: hidden;
+	z-index: 0;
+}
+
+#wenkmPlayer .music-player .info {
+	width: 100%;
+	height: 100px;
+	background: #222;
+	background: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	position: relative;
+}
+
+#wenkmPlayer .music-player .info .jp-playlist li {
+	display: none;
+}
+
+#wenkmPlayer .music-player .info .jp-playlist li a {
+	font-size: 15px;
+	font-weight: 300;
+	text-decoration: none;
+	color: #fff;
+	color: rgba(225, 225, 225, 0.4);
+}
+
+#wenkmPlayer .music-player .info .jp-playlist li a span {
+	font-size: 14px;
+	display: block;
+	margin-top: 10px;
+}
+
+#wenkmPlayer .music-player .info .jp-playlist li.jp-playlist-current {
+	display: block;
+}
+
+#wenkmPlayer .music-player .info .jp-playlist li .jp-free-media,
+.music-player .info .jp-playlist li .jp-playlist-item-remove {
+	display: none;
+}
+
+#wenkmPlayer .music-player .info .left,
+.music-player .info .right {
+	width: 25px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+#wenkmPlayer .music-player .info .right {
+	left: auto;
+	right: 30px;
+}
+
+#wenkmPlayer .music-player .info [class^="icon-"] {
+	margin: 0 0 10px;
+}
+
+#wenkmPlayer .music-player .info .center {
+	padding: 20px 0 0;
+}
+
+#wenkmPlayer .music-player .Speed {
+	width: 100%;
+	height: 5px;
+	display: block;
+	background: #000;
+	position: absolute;
+	bottom: 0px;
+	cursor: pointer;
+}
+
+#wenkmPlayer .music-player .Speed span,
+.music-player .volume-level span {
+	position: relative;
+	display: block;
+	background: #ed553b;
+	width: 0%;
+	height: 5px;
+}
+
+#wenkmPlayer .music-player .Speed span:after,
+.music-player .volume-level span:after {
+	position: absolute;
+	right: -5px;
+	top: -8px;
+	content: "";
+	width: 10px;
+	height: 22px;
+}
+
+#wenkmPlayer .music-player .controls {
+	text-align: center;
+	width: 100%;
+	height: 190px;
+	background: #982e4b;
+	background: rgba(152, 46, 75, 0.6);
+}
+
+#wenkmPlayer .music-player .controls .current {
+	font-size: 48px;
+	color: #fff;
+	color: rgba(225, 225, 225, 0.4);
+	padding: 15px 0 20px;
+}
+
+#wenkmPlayer .music-player .controls .play-controls a {
+	display: inline-block;
+	width: 35px;
+	height: 40px;
+	margin: 0 30px;
+}
+
+#wenkmPlayer .music-player .controls .volume-level {
+	position: relative;
+	bottom: auto;
+	width: 200px;
+	height: 2px;
+	margin: 30px auto 0;
+	background: rgba(225, 225, 225, 0.3);
+}
+
+#wenkmPlayer .music-player .controls .volume-level span {
+	height: 2px;
+}
+
+#wenkmPlayer .music-player .controls .volume-level span:after {
+	right: -11px;
+	top: -8px;
+	width: 22px;
+	height: 22px;
+	background-image: url("../image/v5i67v21.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/v5i67v21.png*/;
+}
+
+#wenkmPlayer .music-loud {
+	position: absolute;
+	right: -32px;
+	top: -13px;
+	width: 22px;
+}
+
+#wenkmPlayer .music-whisper {
+	position: absolute;
+	right: -32px;
+	top: -15px;
+	width: 245%;
+}
+
+[class^="ico-"] {
+	width: 30px;
+	height: 30px;
+	background: url("../image/e09t8tf1.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/e09t8tf1.png*/ no-repeat center;
+	display: block;
+}
+
+#wenkmPlayer .ico-shuffle {
+	background-image: url("../image/aqaxrxs1.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/aqaxrxs1.png*/;
+}
+
+#wenkmPlayer .ico-heart {
+	background-image: url("../image/e09t8tf1.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/e09t8tf1.png*/;
+}
+
+#wenkmPlayer .ico-repeat {
+	background-image: url("../image/338f8mx1.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/338f8mx1.png*/;
+}
+
+#wenkmPlayer .ico-share {
+	background-image: url("../image/pgic6me1.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/pgic6me1.png*/;
+}
+
+#wenkmPlayer .ico-previous {
+	background-image: url("../image/liqj0nr1.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/liqj0nr1.png*/;
+}
+
+#wenkmPlayer .ico-play {
+	background-image: url("../image/xlbv5ar1.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/xlbv5ar1.png*/;
+}
+
+#wenkmPlayer .ico-pause {
+	background-image: url("../image/lihwduj1.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/lihwduj1.png*/;
+}
+
+#wenkmPlayer .ico-next {
+	background-image: url("../image/riqj0nr1.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/riqj0nr1.png*/;
+}
+
+#wenkmPlayer .ico-volume-up {
+	background-image: url("../image/qqdoddi1.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/qqdoddi1.png*/;
+}
+
+#wenkmPlayer .ico-volume-down {
+	background-image: url("../image/3iirf2f1.png")/*tpa=http://www.httpswww.144fz.com/static/home/image/3iirf2f1.png*/;
+}
+
+#wenkmPlayer .copyrights {
+	text-align: center;
+	text-transform: capitalize;
+	margin: 50px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+#wenkmPlayer .copyrights a {
+	color: rgba(152, 46, 75, 0.9);
+	text-decoration: none;
+}
+
+#cs_box {
+	width: 140px;
+	height: 220px;
+	color: #FFF;
+	position: fixed;
+	right: 10px;
+	top: 270px;
+	border-radius: 10px;
+	z-index: 1000
+}
+
+#cs_box span {
+	height: 20px;
+	line-height: 20px;
+	display: block;
+}
+
+.gg {
+	width: 800px;
+	text-align: center;
+	border: 1px solid #f0d584;
+	background: #fffcde;
+	color: #f40;
+	line-height: 24px;
+	padding-top: 4px;
+	float: right;
+	font-size: 15px;
+}
+
+.fuzhu-info1 {
+	padding: 15px 0 15px 15px;
+	position: relative;
+}
+
+.fuzhu-info {
+	font-size: 22px;
+	color: #4d4d4d;
+	line-height: 1.8em;
+	font-weight: bold;
+	padding: 15px;
+}
+
+.fuzhu-info h3 {
+	color: #74b700;
+	font-weight: bold;
+	text-indent: 5px
+}
+
+.fuzhu-info p {
+	color: #4d4d4d;
+	font-weight: bold;
+}
+
+.fuzhu-info strong {
+	color: #e80000;
+	font-weight: bold;
+}
+
+.goods_wrap {
+	margin-bottom: 20px;
+}
+
+.mark {
+	position: absolute;
+	left: 8px;
+	top: 8px;
+}
+
+.right-button {
+	width: 100%;
+	border-left: 2px solid #999;
+}
+
+.right-button .btn {
+	display: block;
+	margin: 20px auto;
+	width: 160px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFF;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.right-button .buy {
+	background: #35c367;
+}
+
+.right-button .buy2 {
+	background: #35c3b6;
+}
+
+.right-button .down {
+	background: #ff6347;
+}
+
+.right-button .ys168 {
+	background: #ff9d47;
+}
+
+.right-button .buy:hover {
+	background: #19b340;
+}
+
+.right-button .buy2:hover {
+	background: #34b9ac;
+}
+
+.right-button .down:hover {
+	background: #ff3b19;
+}
+
+.right-button .ys168:hover {
+	background: #ff8319;
+}
